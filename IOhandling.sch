@@ -1,0 +1,825 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "I/O Circuit"
+Date ""
+Rev ""
+Comp "https://www.designer2k2.at"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Analog_ADC:ADS1015IDGS U?
+U 1 1 603482D0
+P 4200 2550
+AR Path="/603482D0" Ref="U?"  Part="1" 
+AR Path="/6033C90F/603482D0" Ref="U8"  Part="1" 
+F 0 "U8" H 4200 3231 50  0000 C CNN
+F 1 "ADS1015IDGS" H 4200 3140 50  0000 C CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 4200 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads1015.pdf" H 4150 1650 50  0001 C CNN
+F 4 "C193969" H 4200 2550 50  0001 C CNN "JLCPCB"
+	1    4200 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603482D6
+P 4200 3100
+AR Path="/603482D6" Ref="#PWR?"  Part="1" 
+AR Path="/6033C90F/603482D6" Ref="#PWR065"  Part="1" 
+F 0 "#PWR065" H 4200 2850 50  0001 C CNN
+F 1 "GND" H 4205 2927 50  0000 C CNN
+F 2 "" H 4200 3100 50  0001 C CNN
+F 3 "" H 4200 3100 50  0001 C CNN
+	1    4200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3100 4200 3000
+Wire Wire Line
+	4200 3000 3700 3000
+Wire Wire Line
+	3700 3000 3700 2750
+Wire Wire Line
+	3700 2750 3800 2750
+Connection ~ 4200 3000
+Wire Wire Line
+	4200 3000 4200 2950
+$Comp
+L power:+5V #PWR?
+U 1 1 603482E2
+P 4200 1800
+AR Path="/603482E2" Ref="#PWR?"  Part="1" 
+AR Path="/6033C90F/603482E2" Ref="#PWR064"  Part="1" 
+F 0 "#PWR064" H 4200 1650 50  0001 C CNN
+F 1 "+5V" H 4215 1973 50  0000 C CNN
+F 2 "" H 4200 1800 50  0001 C CNN
+F 3 "" H 4200 1800 50  0001 C CNN
+	1    4200 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1800 4200 2050
+Wire Wire Line
+	3800 2650 3700 2650
+Wire Wire Line
+	3700 2550 3800 2550
+NoConn ~ 3800 2350
+$Comp
+L Device:C C?
+U 1 1 603482EF
+P 3000 2600
+AR Path="/603482EF" Ref="C?"  Part="1" 
+AR Path="/6033C90F/603482EF" Ref="C18"  Part="1" 
+F 0 "C18" H 3115 2646 50  0000 L CNN
+F 1 "100n" H 3115 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 2450 50  0001 C CNN
+F 3 "~" H 3000 2600 50  0001 C CNN
+F 4 "C14663" H 3000 2600 50  0001 C CNN "JLCPCB"
+	1    3000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603482F5
+P 2800 2900
+AR Path="/603482F5" Ref="#PWR?"  Part="1" 
+AR Path="/6033C90F/603482F5" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 2800 2650 50  0001 C CNN
+F 1 "GND" H 2805 2727 50  0000 C CNN
+F 2 "" H 2800 2900 50  0001 C CNN
+F 3 "" H 2800 2900 50  0001 C CNN
+	1    2800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2400 3000 2450
+Wire Wire Line
+	3000 2750 3000 2800
+$Comp
+L power:+5V #PWR?
+U 1 1 603482FD
+P 2800 2350
+AR Path="/603482FD" Ref="#PWR?"  Part="1" 
+AR Path="/6033C90F/603482FD" Ref="#PWR060"  Part="1" 
+F 0 "#PWR060" H 2800 2200 50  0001 C CNN
+F 1 "+5V" H 2815 2523 50  0000 C CNN
+F 2 "" H 2800 2350 50  0001 C CNN
+F 3 "" H 2800 2350 50  0001 C CNN
+	1    2800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAT54SW D?
+U 1 1 60348304
+P 5200 2200
+AR Path="/60348304" Ref="D?"  Part="1" 
+AR Path="/6033C90F/60348304" Ref="D6"  Part="1" 
+F 0 "D6" V 5246 2287 50  0000 L CNN
+F 1 "BAT54SW" V 5155 2287 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 5275 2325 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 5080 2200 50  0001 C CNN
+F 4 "C78260" H 5200 2200 50  0001 C CNN "JLCPCB"
+	1    5200 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 6034830B
+P 2550 2600
+AR Path="/6034830B" Ref="D?"  Part="1" 
+AR Path="/6033C90F/6034830B" Ref="D5"  Part="1" 
+F 0 "D5" V 2504 2680 50  0000 L CNN
+F 1 "5.1V" V 2595 2680 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 2550 2600 50  0001 C CNN
+F 3 "~" H 2550 2600 50  0001 C CNN
+F 4 "C85392" V 2550 2600 50  0001 C CNN "JLCPCB"
+	1    2550 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 2400 2800 2400
+Wire Wire Line
+	2550 2400 2550 2450
+Wire Wire Line
+	2800 2350 2800 2400
+Connection ~ 2800 2400
+Wire Wire Line
+	2800 2400 2550 2400
+Wire Wire Line
+	3000 2800 2800 2800
+Wire Wire Line
+	2550 2800 2550 2750
+Wire Wire Line
+	2800 2900 2800 2800
+Connection ~ 2800 2800
+Wire Wire Line
+	2800 2800 2550 2800
+Wire Wire Line
+	4600 2450 4750 2450
+Wire Wire Line
+	4750 2450 4750 2200
+Wire Wire Line
+	4750 2200 5400 2200
+Wire Wire Line
+	5600 2200 5400 2200
+Connection ~ 5400 2200
+$Comp
+L Diode:BAT54SW D?
+U 1 1 603620FF
+P 5450 2600
+AR Path="/603620FF" Ref="D?"  Part="1" 
+AR Path="/6033C90F/603620FF" Ref="D7"  Part="1" 
+F 0 "D7" V 5496 2687 50  0000 L CNN
+F 1 "BAT54SW" V 5405 2687 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 5525 2725 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 5330 2600 50  0001 C CNN
+F 4 "C78260" H 5450 2600 50  0001 C CNN "JLCPCB"
+	1    5450 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 2600 5650 2600
+Connection ~ 5650 2600
+$Comp
+L Diode:BAT54SW D?
+U 1 1 6036572C
+P 5700 3000
+AR Path="/6036572C" Ref="D?"  Part="1" 
+AR Path="/6033C90F/6036572C" Ref="D8"  Part="1" 
+F 0 "D8" V 5746 3087 50  0000 L CNN
+F 1 "BAT54SW" V 5655 3087 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 5775 3125 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 5580 3000 50  0001 C CNN
+F 4 "C78260" H 5700 3000 50  0001 C CNN "JLCPCB"
+	1    5700 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 3000 5900 3000
+Connection ~ 5900 3000
+$Comp
+L Diode:BAT54SW D?
+U 1 1 603658EB
+P 5950 3400
+AR Path="/603658EB" Ref="D?"  Part="1" 
+AR Path="/6033C90F/603658EB" Ref="D9"  Part="1" 
+F 0 "D9" V 5996 3487 50  0000 L CNN
+F 1 "BAT54SW" V 5905 3487 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 6025 3525 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 5830 3400 50  0001 C CNN
+F 4 "C78260" H 5950 3400 50  0001 C CNN "JLCPCB"
+	1    5950 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 3400 6150 3400
+Connection ~ 6150 3400
+Wire Wire Line
+	4800 2600 4800 2550
+Wire Wire Line
+	4800 2550 4600 2550
+Wire Wire Line
+	4800 2600 5650 2600
+Wire Wire Line
+	4600 2650 4750 2650
+Wire Wire Line
+	4750 2650 4750 3000
+Wire Wire Line
+	4750 3000 5900 3000
+Wire Wire Line
+	4600 2750 4650 2750
+Wire Wire Line
+	4650 2750 4650 3400
+Wire Wire Line
+	4650 3400 6150 3400
+Wire Wire Line
+	5450 2300 5450 1750
+Wire Wire Line
+	5450 1750 5200 1750
+Wire Wire Line
+	5200 1750 5200 1900
+Wire Wire Line
+	5700 2700 5700 1750
+Wire Wire Line
+	5700 1750 5550 1750
+Connection ~ 5450 1750
+Wire Wire Line
+	5950 3100 5950 1750
+Wire Wire Line
+	5950 1750 5700 1750
+Connection ~ 5700 1750
+Wire Wire Line
+	5950 3700 5950 3850
+Wire Wire Line
+	5950 3850 5700 3850
+Wire Wire Line
+	5700 3850 5700 3300
+Wire Wire Line
+	5450 3850 5450 2900
+Wire Wire Line
+	5450 3850 5600 3850
+Connection ~ 5700 3850
+Wire Wire Line
+	5200 2500 5200 3850
+Wire Wire Line
+	5200 3850 5450 3850
+Connection ~ 5450 3850
+$Comp
+L power:+5V #PWR?
+U 1 1 6037E9E5
+P 5550 1700
+AR Path="/6037E9E5" Ref="#PWR?"  Part="1" 
+AR Path="/6033C90F/6037E9E5" Ref="#PWR068"  Part="1" 
+F 0 "#PWR068" H 5550 1550 50  0001 C CNN
+F 1 "+5V" H 5565 1873 50  0000 C CNN
+F 2 "" H 5550 1700 50  0001 C CNN
+F 3 "" H 5550 1700 50  0001 C CNN
+	1    5550 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1700 5550 1750
+Connection ~ 5550 1750
+Wire Wire Line
+	5550 1750 5450 1750
+$Comp
+L power:GND #PWR?
+U 1 1 60380E50
+P 5600 3950
+AR Path="/60380E50" Ref="#PWR?"  Part="1" 
+AR Path="/6033C90F/60380E50" Ref="#PWR069"  Part="1" 
+F 0 "#PWR069" H 5600 3700 50  0001 C CNN
+F 1 "GND" H 5605 3777 50  0000 C CNN
+F 2 "" H 5600 3950 50  0001 C CNN
+F 3 "" H 5600 3950 50  0001 C CNN
+	1    5600 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3950 5600 3850
+Connection ~ 5600 3850
+Wire Wire Line
+	5600 3850 5700 3850
+$Comp
+L Device:R R11
+U 1 1 60386BE9
+P 5850 5050
+F 0 "R11" V 5643 5050 50  0000 C CNN
+F 1 "1k" V 5734 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5780 5050 50  0001 C CNN
+F 3 "~" H 5850 5050 50  0001 C CNN
+F 4 "C21190" V 5850 5050 50  0001 C CNN "JLCPCB"
+	1    5850 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 6038790C
+P 5750 2200
+F 0 "R10" V 5543 2200 50  0000 C CNN
+F 1 "1k" V 5634 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5680 2200 50  0001 C CNN
+F 3 "~" H 5750 2200 50  0001 C CNN
+F 4 "C21190" V 5750 2200 50  0001 C CNN "JLCPCB"
+	1    5750 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 60388682
+P 6000 2600
+F 0 "R13" V 5793 2600 50  0000 C CNN
+F 1 "1k" V 5884 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5930 2600 50  0001 C CNN
+F 3 "~" H 6000 2600 50  0001 C CNN
+F 4 "C21190" V 6000 2600 50  0001 C CNN "JLCPCB"
+	1    6000 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 60388FA9
+P 6250 3000
+F 0 "R16" V 6043 3000 50  0000 C CNN
+F 1 "1k" V 6134 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6180 3000 50  0001 C CNN
+F 3 "~" H 6250 3000 50  0001 C CNN
+F 4 "C21190" V 6250 3000 50  0001 C CNN "JLCPCB"
+	1    6250 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 603898BB
+P 6500 3400
+F 0 "R19" V 6293 3400 50  0000 C CNN
+F 1 "1k" V 6384 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6430 3400 50  0001 C CNN
+F 3 "~" H 6500 3400 50  0001 C CNN
+F 4 "C21190" V 6500 3400 50  0001 C CNN "JLCPCB"
+	1    6500 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 6038A262
+P 6100 5150
+F 0 "R14" V 5893 5150 50  0000 C CNN
+F 1 "1k" V 5984 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 5150 50  0001 C CNN
+F 3 "~" H 6100 5150 50  0001 C CNN
+F 4 "C21190" V 6100 5150 50  0001 C CNN "JLCPCB"
+	1    6100 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 6038AA36
+P 6350 5250
+F 0 "R17" V 6143 5250 50  0000 C CNN
+F 1 "1k" V 6234 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 5250 50  0001 C CNN
+F 3 "~" H 6350 5250 50  0001 C CNN
+F 4 "C21190" V 6350 5250 50  0001 C CNN "JLCPCB"
+	1    6350 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 6038E2AD
+P 6100 5550
+F 0 "R15" V 5893 5550 50  0000 C CNN
+F 1 "1k" V 5984 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 5550 50  0001 C CNN
+F 3 "~" H 6100 5550 50  0001 C CNN
+F 4 "C21190" V 6100 5550 50  0001 C CNN "JLCPCB"
+	1    6100 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 6038E2B8
+P 6350 5650
+F 0 "R18" V 6143 5650 50  0000 C CNN
+F 1 "1k" V 6234 5650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 5650 50  0001 C CNN
+F 3 "~" H 6350 5650 50  0001 C CNN
+F 4 "C21190" V 6350 5650 50  0001 C CNN "JLCPCB"
+	1    6350 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 6038E2C3
+P 6600 5750
+F 0 "R21" V 6393 5750 50  0000 C CNN
+F 1 "1k" V 6484 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6530 5750 50  0001 C CNN
+F 3 "~" H 6600 5750 50  0001 C CNN
+F 4 "C21190" V 6600 5750 50  0001 C CNN "JLCPCB"
+	1    6600 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 5750 6450 5750
+Text GLabel 3700 2550 0    50   Input ~ 0
+SCL0A
+Text GLabel 3700 2650 0    50   Input ~ 0
+SDA0A
+$Comp
+L power:GND #PWR071
+U 1 1 601A7DFC
+P 8900 3250
+F 0 "#PWR071" H 8900 3000 50  0001 C CNN
+F 1 "GND" H 8905 3077 50  0000 C CNN
+F 2 "" H 8900 3250 50  0001 C CNN
+F 3 "" H 8900 3250 50  0001 C CNN
+	1    8900 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 3250 8900 3350
+Wire Wire Line
+	8900 3350 8800 3350
+Wire Wire Line
+	8300 3350 8200 3350
+Wire Wire Line
+	8200 3350 8200 3250
+$Comp
+L power:+5V #PWR070
+U 1 1 601AC978
+P 8200 3250
+F 0 "#PWR070" H 8200 3100 50  0001 C CNN
+F 1 "+5V" H 8215 3423 50  0000 C CNN
+F 2 "" H 8200 3250 50  0001 C CNN
+F 3 "" H 8200 3250 50  0001 C CNN
+	1    8200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3400 7100 3550
+Wire Wire Line
+	7100 3550 8300 3550
+Wire Wire Line
+	6650 3400 7100 3400
+Wire Wire Line
+	7200 3000 7200 3450
+Wire Wire Line
+	7200 3450 8300 3450
+Wire Wire Line
+	6400 3000 7200 3000
+Wire Wire Line
+	6150 2600 9150 2600
+Wire Wire Line
+	5900 2200 9250 2200
+Wire Wire Line
+	7200 5050 7200 3650
+Wire Wire Line
+	7200 3650 8300 3650
+Wire Wire Line
+	6000 5050 7200 5050
+Wire Wire Line
+	8300 3750 7300 3750
+Wire Wire Line
+	7300 3750 7300 5150
+Wire Wire Line
+	7300 5150 6250 5150
+Wire Wire Line
+	6500 5250 7400 5250
+Wire Wire Line
+	7400 5250 7400 3850
+Wire Wire Line
+	7400 3850 8300 3850
+Wire Wire Line
+	6250 5550 9050 5550
+Wire Wire Line
+	9050 5550 9050 3850
+Wire Wire Line
+	9050 3850 8800 3850
+Wire Wire Line
+	8800 3750 9150 3750
+Wire Wire Line
+	9150 3750 9150 5650
+Wire Wire Line
+	9150 5650 6500 5650
+Wire Wire Line
+	6750 5750 9250 5750
+Wire Wire Line
+	9250 5750 9250 3650
+Wire Wire Line
+	9250 3650 8800 3650
+Wire Wire Line
+	9250 3550 9250 2200
+Wire Wire Line
+	9250 3550 8800 3550
+Wire Wire Line
+	9150 3450 9150 2600
+Wire Wire Line
+	9150 3450 8800 3450
+Text Notes 5350 1350 0    50   ~ 0
+I2C  Analog Inputs
+$Comp
+L Diode:BAT54SW D?
+U 1 1 60443B7C
+P 5400 5750
+AR Path="/60443B7C" Ref="D?"  Part="1" 
+AR Path="/6033C90F/60443B7C" Ref="D14"  Part="1" 
+F 0 "D14" V 5446 5837 50  0000 L CNN
+F 1 "BAT54SW" V 5355 5837 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 5475 5875 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 5280 5750 50  0001 C CNN
+F 4 "C78260" H 5400 5750 50  0001 C CNN "JLCPCB"
+	1    5400 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BAT54SW D?
+U 1 1 60445306
+P 4850 5650
+AR Path="/60445306" Ref="D?"  Part="1" 
+AR Path="/6033C90F/60445306" Ref="D12"  Part="1" 
+F 0 "D12" V 4896 5737 50  0000 L CNN
+F 1 "BAT54SW" V 4805 5737 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4925 5775 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 4730 5650 50  0001 C CNN
+F 4 "C78260" H 4850 5650 50  0001 C CNN "JLCPCB"
+	1    4850 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BAT54SW D?
+U 1 1 60446D1F
+P 4350 5550
+AR Path="/60446D1F" Ref="D?"  Part="1" 
+AR Path="/6033C90F/60446D1F" Ref="D10"  Part="1" 
+F 0 "D10" V 4396 5637 50  0000 L CNN
+F 1 "BAT54SW" V 4305 5637 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4425 5675 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 4230 5550 50  0001 C CNN
+F 4 "C78260" H 4350 5550 50  0001 C CNN "JLCPCB"
+	1    4350 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BAT54SW D?
+U 1 1 604483AD
+P 5150 5250
+AR Path="/604483AD" Ref="D?"  Part="1" 
+AR Path="/6033C90F/604483AD" Ref="D13"  Part="1" 
+F 0 "D13" V 5196 5337 50  0000 L CNN
+F 1 "BAT54SW" V 5105 5337 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 5225 5375 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 5030 5250 50  0001 C CNN
+F 4 "C78260" H 5150 5250 50  0001 C CNN "JLCPCB"
+	1    5150 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BAT54SW D?
+U 1 1 6044AE90
+P 4100 5050
+AR Path="/6044AE90" Ref="D?"  Part="1" 
+AR Path="/6033C90F/6044AE90" Ref="D4"  Part="1" 
+F 0 "D4" V 4146 5137 50  0000 L CNN
+F 1 "BAT54SW" V 4055 5137 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4175 5175 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 3980 5050 50  0001 C CNN
+F 4 "C78260" H 4100 5050 50  0001 C CNN "JLCPCB"
+	1    4100 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 5050 5700 5050
+Wire Wire Line
+	4850 5150 5950 5150
+Wire Wire Line
+	5350 5250 6200 5250
+Wire Wire Line
+	5050 5650 6200 5650
+Wire Wire Line
+	5950 5550 5250 5550
+Wire Wire Line
+	5250 5550 5250 5600
+Wire Wire Line
+	5250 5600 5050 5600
+Wire Wire Line
+	5050 5600 5050 5550
+Wire Wire Line
+	5050 5550 4550 5550
+Wire Wire Line
+	4100 5350 4100 6250
+Wire Wire Line
+	5400 6250 5400 6050
+Wire Wire Line
+	5150 5550 5150 6250
+Connection ~ 5150 6250
+Wire Wire Line
+	5150 6250 5400 6250
+Wire Wire Line
+	4850 5950 4850 6250
+Connection ~ 4850 6250
+Wire Wire Line
+	4850 6250 5150 6250
+Wire Wire Line
+	4650 5450 4650 6250
+Connection ~ 4650 6250
+Wire Wire Line
+	4650 6250 4750 6250
+Wire Wire Line
+	4350 5850 4350 6250
+Wire Wire Line
+	4100 6250 4350 6250
+Connection ~ 4350 6250
+Wire Wire Line
+	4350 6250 4650 6250
+Wire Wire Line
+	5400 5450 5400 4550
+Wire Wire Line
+	5400 4550 5150 4550
+Wire Wire Line
+	4100 4550 4100 4750
+Wire Wire Line
+	4350 5250 4350 4550
+Connection ~ 4350 4550
+Wire Wire Line
+	4350 4550 4100 4550
+Wire Wire Line
+	4650 4850 4650 4550
+Connection ~ 4650 4550
+Wire Wire Line
+	4650 4550 4350 4550
+Wire Wire Line
+	5150 4950 5150 4550
+Connection ~ 5150 4550
+$Comp
+L power:GND #PWR?
+U 1 1 6047A12C
+P 4750 6250
+AR Path="/6047A12C" Ref="#PWR?"  Part="1" 
+AR Path="/6033C90F/6047A12C" Ref="#PWR049"  Part="1" 
+F 0 "#PWR049" H 4750 6000 50  0001 C CNN
+F 1 "GND" H 4755 6077 50  0000 C CNN
+F 2 "" H 4750 6250 50  0001 C CNN
+F 3 "" H 4750 6250 50  0001 C CNN
+	1    4750 6250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 6250
+Wire Wire Line
+	4750 6250 4850 6250
+$Comp
+L power:+3.3V #PWR047
+U 1 1 6047ADFA
+P 4750 4550
+F 0 "#PWR047" H 4750 4400 50  0001 C CNN
+F 1 "+3.3V" H 4765 4723 50  0000 C CNN
+F 2 "" H 4750 4550 50  0001 C CNN
+F 3 "" H 4750 4550 50  0001 C CNN
+	1    4750 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 4550
+Wire Wire Line
+	4750 4550 4650 4550
+$Comp
+L Diode:BAT54SW D?
+U 1 1 60449C66
+P 4650 5150
+AR Path="/60449C66" Ref="D?"  Part="1" 
+AR Path="/6033C90F/60449C66" Ref="D11"  Part="1" 
+F 0 "D11" V 4696 5237 50  0000 L CNN
+F 1 "BAT54SW" V 4605 5237 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4725 5275 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 4530 5150 50  0001 C CNN
+F 4 "C78260" H 4650 5150 50  0001 C CNN "JLCPCB"
+	1    4650 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 4550 4900 4550
+Wire Wire Line
+	4850 5350 4850 5250
+Wire Wire Line
+	4850 5250 4900 5250
+Wire Wire Line
+	4900 5250 4900 4550
+Connection ~ 4900 4550
+Wire Wire Line
+	4900 4550 5150 4550
+Text GLabel 5550 5050 0    50   Input ~ 0
+3
+Text GLabel 5550 5150 0    50   Input ~ 0
+4
+Text GLabel 5550 5250 0    50   Input ~ 0
+5
+Text GLabel 5800 5550 0    50   Input ~ 0
+16
+Text GLabel 5800 5650 0    50   Input ~ 0
+17
+Text GLabel 5800 5750 0    50   Input ~ 0
+21
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J8
+U 1 1 60491327
+P 8500 3550
+F 0 "J8" H 8550 3967 50  0000 C CNN
+F 1 "I/O" H 8550 3876 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1212_2x06_P3.00mm_Vertical" H 8500 3550 50  0001 C CNN
+F 3 "~" H 8500 3550 50  0001 C CNN
+F 4 "233-2927" H 8500 3550 50  0001 C CNN "RS"
+	1    8500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601BFB49
+P 3300 3450
+AR Path="/60404697/601BFB49" Ref="C?"  Part="1" 
+AR Path="/601BFB49" Ref="C?"  Part="1" 
+AR Path="/6033C90F/601BFB49" Ref="C22"  Part="1" 
+F 0 "C22" H 3415 3496 50  0000 L CNN
+F 1 "10u" H 3415 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3338 3300 50  0001 C CNN
+F 3 "~" H 3300 3450 50  0001 C CNN
+F 4 "C13585" H 3300 3450 50  0001 C CNN "JLCPCB"
+	1    3300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601BFB4F
+P 3300 3650
+AR Path="/601BFB4F" Ref="#PWR?"  Part="1" 
+AR Path="/6033C90F/601BFB4F" Ref="#PWR073"  Part="1" 
+F 0 "#PWR073" H 3300 3400 50  0001 C CNN
+F 1 "GND" H 3305 3477 50  0000 C CNN
+F 2 "" H 3300 3650 50  0001 C CNN
+F 3 "" H 3300 3650 50  0001 C CNN
+	1    3300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3250 3300 3300
+Wire Wire Line
+	3300 3600 3300 3650
+$Comp
+L power:+5V #PWR?
+U 1 1 601BFB57
+P 3300 3250
+AR Path="/601BFB57" Ref="#PWR?"  Part="1" 
+AR Path="/6033C90F/601BFB57" Ref="#PWR072"  Part="1" 
+F 0 "#PWR072" H 3300 3100 50  0001 C CNN
+F 1 "+5V" H 3315 3423 50  0000 C CNN
+F 2 "" H 3300 3250 50  0001 C CNN
+F 3 "" H 3300 3250 50  0001 C CNN
+	1    3300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 602AB0DB
+P 8500 4350
+AR Path="/602AB0DB" Ref="C?"  Part="1" 
+AR Path="/6033C90F/602AB0DB" Ref="C24"  Part="1" 
+F 0 "C24" H 8615 4396 50  0000 L CNN
+F 1 "100n" H 8615 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8538 4200 50  0001 C CNN
+F 3 "~" H 8500 4350 50  0001 C CNN
+F 4 "C14663" H 8500 4350 50  0001 C CNN "JLCPCB"
+	1    8500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 602AC6AA
+P 8500 4600
+F 0 "#PWR038" H 8500 4350 50  0001 C CNN
+F 1 "GND" H 8505 4427 50  0000 C CNN
+F 2 "" H 8500 4600 50  0001 C CNN
+F 3 "" H 8500 4600 50  0001 C CNN
+	1    8500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR037
+U 1 1 602ACE50
+P 8500 4150
+F 0 "#PWR037" H 8500 4000 50  0001 C CNN
+F 1 "+5V" H 8515 4323 50  0000 C CNN
+F 2 "" H 8500 4150 50  0001 C CNN
+F 3 "" H 8500 4150 50  0001 C CNN
+	1    8500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4150 8500 4200
+Wire Wire Line
+	8500 4500 8500 4600
+$EndSCHEMATC
