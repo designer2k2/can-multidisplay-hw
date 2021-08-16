@@ -26,3 +26,18 @@ Software: https://github.com/designer2k2/can-multidisplay
 * ILI9341 + XPT2046 Touch display Interface
 
 PCB is made in KiCad and parts selected to have it produced by JLCPCB
+
+## Images:
+
+PCB Backside:
+
+![PCB Backside](https://github.com/designer2k2/can-multidisplay-hw/raw/main/image/CanDisplayRenderBack.jpg)
+
+3D Rendering with Display, GPS and RGB LED:
+
+![PCB Rendering](https://github.com/designer2k2/can-multidisplay-hw/raw/main/image/CanDisplayRenderScreen.png)
+
+Display running:
+
+![Display running](https://github.com/designer2k2/can-multidisplay-hw/raw/main/image/CanDisplayReal.jpg)
+
